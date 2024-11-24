@@ -1,0 +1,226 @@
+/* Define CSS variables in :root pseudo-class for your color scheme */
+:root {
+    --primary-color: #368FD3;
+    --secondary-color: #224A6D;
+    --accent1-color: #FFD470;
+    --accent2-color: #FFFFFF;
+    --heading-font: 'Poppins', sans-serif;
+    --text-font: 'Lato', sans-serif;
+}
+
+/* Style for body */
+body {
+    font-family: var(--text-font);
+    color: var(--secondary-color);
+    background-color: var(--accent2-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Limiting the entire width of the page */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style for headings and paragraph elements */
+/* h1,  */
+h2 {
+    color: var(--primary-color);
+}
+
+.dryOar {
+    font-family: var(--heading-font);
+    font-weight: 700px;
+    font-size: 3rem;
+    color: var(--primary-color);
+    position: absolute;
+    background-color: rgba(102, 102, 102, 0.7);
+    color: var(--accent2-color);
+    padding: 20px;
+    width: 96.6%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.art {
+    margin-top: 5px;
+    height: 98%;
+    float: right;
+}
+
+article {
+    margin-left: 150px;
+    margin-top: -400px;
+    width: 70%;
+    height: 150px;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+}
+
+.paragraph {
+    position: absolute;
+    font-size: 20px;
+    width: 75%;
+    margin-top: 15px;
+    line-height: 1.6;
+    cursor: pointer;
+    float: right;
+}
+.hero {
+    position: relative;
+}
+
+.hero-img {
+    width: 100%;
+    height: 655px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.hero article {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.hero article img {
+    float: right;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+.hero article {
+    text-align: center;
+}
+
+/* Article and Sections */
+.article-content, .sections {
+    margin: 20px;
+}
+
+.sections {
+    padding: 20px;
+    max-width: 90%;
+    margin: 10px 0;
+}
+
+/* Header and navigation styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    color: var(--accent2-color);
+}
+
+.logo {
+    height: 50px;
+}
+
+header .logo-box {
+    height: 50px;
+}
+
+nav a {
+    color: var(--accent2-color);
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 200px;
+    height: 100px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+}
+
+footer {
+    color: var(--accent2-color);
+}
+
+.sociallinks {
+    width: 35px;
+    height: auto;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.img-sections {
+    padding-left: 20px;
+}
+
+.imgg1 {
+    width: 50%;
+    border-radius: 10px;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.imgg2 {
+    width: 50%;
+    border-radius: 10px;
+    float: right;
+    position: inherit;
+    margin-right: -10px;
+    margin-top: -60px;
+    cursor: pointer;
+}
+
+.imgg3 {
+    width: 50%;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.imgg4 {
+    width: 50%;
+    border-radius: 10px;
+    float: right;
+    margin-top: -150px;
+    cursor: pointer;
+    margin-right: -10px;
+}
+
+.imgg5 {
+    width: 50%;
+    border-radius: 10px;
+    margin-top: -150px;
+    margin-right: -10px;
+    float: right;
+    position: relative;
+    cursor: pointer;
+}
+
+.fb {
+    width: 50px;
+    float: right;
+    margin-top: -5px;
+    margin-right: -550px;
+}
+
+.twt {
+    width: 50px;
+    float: right;
+    margin-top: -25px;
+    margin-right: -650px;
+}
+
+.insta {
+    width: 50px;
+    float: right;
+    margin-top: -25px;
+    margin-right: -750px;
+}
