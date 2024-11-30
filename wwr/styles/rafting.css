@@ -113,26 +113,29 @@ h2 {
 
 /* Header and navigation styles */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+	grid-template-columns: 500px 2fr ;
+	align-items: center;
     background-color: var(--primary-color);
-    padding: 10px 20px;
+    padding: 10px 70px;
     color: var(--accent2-color);
 }
 
 .logo {
-    height: 50px;
+    height: 90px;
 }
 
 header .logo-box {
-    height: 50px;
+    height: 90px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
 }
 
 nav a {
     color: var(--accent2-color);
-    margin: 0 15px;
     text-decoration: none;
+    font-size: 25px;
 }
 
 footer {
@@ -153,6 +156,8 @@ footer {
     height: auto;
     margin: 0 10px;
     text-decoration: none;
+    display: flex;
+    align-items: flex-start;
 }
 
 .img-sections {
