@@ -75,7 +75,7 @@ main {
 }
 
 .dryOar {
-    font-family: var(--heading-font);
+    font-family: 'Poppins', sans-serif;
     font-size: 3rem;
     color: var(--primary-color);
     position: absolute;
@@ -103,7 +103,7 @@ article {
 h2 {
     display: flex;
     justify-content: center;
-    font-family: var(--heading-font);
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 2.5rem;
     margin-top: 30px;
