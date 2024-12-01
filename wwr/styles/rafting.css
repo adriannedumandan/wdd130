@@ -8,7 +8,6 @@
     --text-font: 'Lato', sans-serif;
 }
 
-/* Style for body */
 body {
     color: var(--secondary-color);
     background-color: var(--accent2-color);
@@ -16,17 +15,62 @@ body {
     padding: 0;
 }
 
-/* Limiting the entire width of the page */
+header {
+    display: grid;
+    grid-template-columns: 500px 2fr;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 10px 70px;
+    color: var(--accent2-color);
+}
+
+.logo {
+    height: 90px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+nav a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    font-size: 25px;
+    margin: 0 15px;
+}
+
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Style for headings and paragraph elements */
-/* h1,  */
-h2 {
-    color: var(--primary-color);
+.hero {
+    position: relative;
+}
+
+.hero-img {
+    width: 100%;
+    height: 655px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero article {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.hero article img {
+    float: right;
+    border-radius: 50%;
+    margin-left: 15px;
 }
 
 .dryOar {
@@ -56,10 +100,12 @@ article {
 }
 
 h2 {
+    display: flex;
+    justify-content: center;
     font-family: var(--heading-font);
     font-weight: 600;
-    font-size: 2rem;
-    margin-bottom: 15px;
+    font-size: 2.5rem;
+    margin-top: 30px;
 }
 
 .paragraph {
@@ -71,80 +117,50 @@ h2 {
     cursor: pointer;
     float: right;
 }
-.hero {
-    position: relative;
-}
 
-.hero-img {
-    width: 100%;
-    height: 655px;
-    object-fit: cover;
-    display: block;
-}
-
-
-.hero article {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 50px;
-}
-
-.hero article img {
-    float: right;
-    border-radius: 50%;
-    margin-left: 15px;
-}
-
-.hero article {
-    text-align: center;
-}
-
-/* Article and Sections */
 .article-content, .sections {
     margin: 20px;
 }
 
 .sections {
-    padding: 20px;
-    max-width: 90%;
-    margin: 10px 0;
+    padding: 5px;
+    max-width: 999%;
+    margin: 10px 50;
 }
 
-/* Header and navigation styles */
-header {
-    display: grid;
-	grid-template-columns: 500px 2fr ;
-	align-items: center;
-    background-color: var(--primary-color);
-    padding: 10px 70px;
-    color: var(--accent2-color);
+.img-sections {
+    padding-left: 20px;
 }
 
-.logo {
-    height: 90px;
+.img1 {
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: auto;
 }
 
-header .logo-box {
-    height: 90px;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
+.figures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
-nav a {
-    color: var(--accent2-color);
-    text-decoration: none;
-    font-size: 25px;
+.imgg1, .imgg2, .imgg3, .imgg4, .imgg5 {
+    width: 150px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 footer {
-    margin-top: 200px;
-    height: 100px;
+    margin-top: 10px;
+    height: 60px;
     text-align: center;
     padding: 10px 0;
     background-color: var(--primary-color);
     color: var(--accent1-color);
+    position: relative;
 }
 
 footer {
@@ -158,72 +174,38 @@ footer {
     text-decoration: none;
     display: flex;
     align-items: flex-start;
+    position: absolute;
+    bottom: 20px;
+    right: 150px;
 }
 
-.img-sections {
-    padding-left: 20px;
+.fb, .twt, .insta {
+    width: 40px;
+    margin: 0 5px;
 }
 
-.imgg1 {
-    width: 50%;
-    border-radius: 10px;
-    margin-top: 100px;
-    cursor: pointer;
+/* New CSS for Content Layout */
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
-.imgg2 {
-    width: 50%;
-    border-radius: 10px;
-    float: right;
-    position: inherit;
-    margin-right: -10px;
-    margin-top: -60px;
-    cursor: pointer;
+.text-left, .text-right {
+    flex: 1;
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 15px;
+    max-width: 30%;
 }
 
-.imgg3 {
-    width: 50%;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 10px;
+.image-center {
+    max-width: 40%;
+    text-align: center;
 }
 
-.imgg4 {
-    width: 50%;
-    border-radius: 10px;
-    float: right;
-    margin-top: -150px;
-    cursor: pointer;
-    margin-right: -10px;
-}
-
-.imgg5 {
-    width: 50%;
-    border-radius: 10px;
-    margin-top: -150px;
-    margin-right: -10px;
-    float: right;
-    position: relative;
-    cursor: pointer;
-}
-
-.fb {
-    width: 50px;
-    float: right;
-    margin-top: -5px;
-    margin-right: -550px;
-}
-
-.twt {
-    width: 50px;
-    float: right;
-    margin-top: -25px;
-    margin-right: -650px;
-}
-
-.insta {
-    width: 50px;
-    float: right;
-    margin-top: -25px;
-    margin-right: -750px;
+.image-center img {
+    max-width: 100%;
+    height: auto;
 }
