@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="description" content="Dry Oar Rafting Co: Contact Us Page">
+    <meta name="author" content="Adrianne Dumandan">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="images/dryoarlogo3.png" alt="logo" class="logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Reach Our Team</h2>
+        <div class="main-p">
+            <p>We love questions and feedback — and we're always happy to help!</p>
+            <p>Here are some ways to contact us.</p>
+        </div>
+        <img src="images/banner.jpg" alt="water rafting" class="banner">
+
+        <section class="contact-info">
+            <h3>Headquarters</h3>
+            <div class="info-container">
+                <div class="details">
+                    <h4>Colorado, United States</h4>
+                    <div class="location">
+                        <img src="images/location.png" alt="location icon">
+                        <p>123 Rafting Lane, River City, RC 45678</p>
+                    </div>
+                    <div class="email">
+                        <img src="images/email.png" alt="email icon">
+                        <p>info@hydrarafting.com</p>
+                    </div>
+                    <div class="phone">
+                        <img src="images/phone.png" alt="phone icon">
+                        <p>+1-617-555-0108</p>
+                    </div>
+                    <div class="socials">
+                        <a href="https://facebook.com">
+                            <img src="images/facebook.png" alt="Facebook" class="fb">
+                        </a>
+                        <a href="https://twitter.com">
+                            <img src="images/twitter.png" alt="Twitter" class="twt">
+                        </a>
+                        <a href="https://instagram.com">
+                            <img src="images/instagram.png" alt="Instagram" class="insta">
+                        </a>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1877895.8309157412!2d-105.6921126607404!3d39.374107663862596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1733489956316!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <h3>Meet the Team</h3>
+            <figure class="team">
+                <figure>
+                    <img src="images/John Smith.jpg" alt="John Smith" class="employee1">
+                    <figcaption>John Smith - Founder</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Aisha Khan.jpg" alt="Aisha Khan" class="employee2">
+                    <figcaption>Aisha Khan - Customer Service</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Susan Lee.jpg" alt="Susan Lee" class="employee3">
+                    <figcaption>Susan Lee - Marketing</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Emily Davis.jpg" alt="Emily Davis" class="employee4">
+                    <figcaption>Emily Davis - Safety Officer</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Michael Brown.jpg" alt="Michael Brown" class="employee5">
+                    <figcaption>Michael Brown - Operations Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Emma Wilson.jpg" alt="Emma Wilson" class="employee6">
+                    <figcaption>Emma Wilson - Adventure Planner</figcaption>
+                </figure>
+            </figure>
+        </section>
+
+        <section>
+            <h3>Send Us a Message</h3>
+            <p>Send us a message and we'll respond within 24 hours.</p>
+            <form action="/submit_contact" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                <label for="general">General Inquiry</label><br>
+                <input type="radio" id="reservation" name="purpose" value="Reservation Question" required>
+                <label for="reservation">Reservation Question</label><br>
+                <input type="radio" id="suggestion" name="purpose" value="Website Suggestion" required>
+                <label for="suggestion">Website Suggestion</label><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required></textarea><br>
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label><br>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2024 | Dry Oar Rafting Co. | Adrianne Dumandan</p>
+    </footer>
+</body>
+</html>
