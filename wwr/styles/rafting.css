@@ -1,6 +1,6 @@
 /* Define CSS variables in :root pseudo-class for your color scheme */
 :root {
-    --accent1-color: #FFD470;
+    --accent1-color: #000000;
     --accent2-color: #FFFFFF;
     --heading-font: 'Poppins', sans-serif;
     --primary-color: #368FD3;
