@@ -100,25 +100,47 @@
             </figure>
         </section>
 
-        <section>
+        <section class="form-section">
             <h3>Send Us a Message</h3>
             <p>Send us a message and we'll respond within 24 hours.</p>
-            <form action="/submit_contact" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
-                <input type="radio" id="general" name="purpose" value="General Inquiry" required>
-                <label for="general">General Inquiry</label><br>
-                <input type="radio" id="reservation" name="purpose" value="Reservation Question" required>
-                <label for="reservation">Reservation Question</label><br>
-                <input type="radio" id="suggestion" name="purpose" value="Website Suggestion" required>
-                <label for="suggestion">Website Suggestion</label><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" required></textarea><br>
-                <input type="checkbox" id="subscribe" name="subscribe">
-                <label for="subscribe">Please subscribe me to the monthly newsletter</label><br>
-                <button type="submit">Send</button>
+            <form>
+                <div class="information">
+                    <div class="form-item column1">
+                        <label for="name">Name</label>
+                        <input class="inpt" type="text" id="name" name="name" required placeholder="*">
+                    </div>
+                    <div class="form-item column1">
+                        <label for="email">Email</label>
+                        <input class="inpt" type="email" id="email" name="email" required placeholder="*">
+                    </div>
+                </div><br>
+                <div class="purpose">
+                    <div class="form-item column2">
+                        <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                        <label for="general">General Inquiry</label>
+                    </div>
+                    <div class="form-item column2">
+                        <input type="radio" id="reservation" name="purpose" value="Reservation Question" required>
+                        <label for="reservation">Reservation Question</label>
+                    </div>
+                    <div class="form-item column2">
+                        <input type="radio" id="suggestion" name="purpose" value="Website Suggestion" required>
+                        <label for="suggestion">Website Suggestion</label>
+                    </div>
+                </div>
+                <div class="messages">
+                    <label for="message">Message</label><br>
+                </div>
+                <textarea id="message" name="message" required rows="4" cols="65"></textarea><br>
+                <div class="form-item column4">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label><br>
+                </div>
+                <center>
+                    <div class="Send">
+                        <button type="submit">SEND</button>
+                    </div>
+                </center>
             </form>
         </section>
     </main>
