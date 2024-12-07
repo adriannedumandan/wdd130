@@ -453,7 +453,6 @@ input[type="checkbox"] {
 }
 
 button {
-    margin: 1rem;
     background-color: var(--primary-color);
     color: var(--accent2-color);
     border: none;
@@ -461,6 +460,7 @@ button {
     padding: 0.75rem 4rem;
     font-size: 15px;
     cursor: pointer;
+    margin-left: 230px;
 }
 
 button:hover {
