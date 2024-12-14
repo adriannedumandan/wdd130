@@ -530,27 +530,31 @@ h5 {
 
 
 .about-us {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: start; 
     padding: 20px;
+    gap: 20px;  
 }
 
 .about-us .image {
-    flex: 1;
+    grid-column: 2; 
+    align-self: start;  
 }
 
 .about-us .content {
-    flex: 1;
+    grid-column: 1;  
+    align-self: start;  
     padding-left: 20px;
-    padding-right: 150px;
+    padding-right: 80px;  
     margin-bottom: 10px;
+    margin-top: -350px;
 }
 
 .about-us h3 {
     font-size: 30px;
     margin-bottom: 15px;
-    margin-top: 0%;
+    margin-top: 0;
 }
 
 .about-us .thrilling {
@@ -558,29 +562,32 @@ h5 {
     font-size: 20px;
 }
 
-
 .offering {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    align-items: start;  
     padding: 20px;
+    gap: 20px;  
 }
 
 .offering .image {
-    flex: 2;
+    grid-column: 1;  
+    align-self: start;  
 }
 
 .offering .content {
-    flex: 1;
-    padding-left: 50px;
+    grid-column: 2;  
+    align-self: start;  
+    padding-left: 30px;
     padding-right: 50px;
     margin-bottom: 10px;
+    margin-top: 80px;
 }
 
 .offering h3 {
     font-size: 30px;
     margin-bottom: 15px;
-    margin-top: 0%;
+    margin-top: 0;
 }
 
 .offering .beginner {
