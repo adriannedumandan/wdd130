@@ -508,7 +508,7 @@ h5 {
 }
 
 .subscribe {
-    margin-top: -2px;
+    margin-top: 10px;
     margin-left: -10px;
     padding-top: 5px;
     padding-left: 15px;
@@ -527,6 +527,7 @@ h5 {
     font-weight: lighter;
     gap: 5px; 
 }
+
 
 .about-us {
     display: flex;
